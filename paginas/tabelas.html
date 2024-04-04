@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+</head>
+<body>
+    <h1>TABELAS</h1><!-- tr representa as linhas e td as colunas--> <!-- o comando border dentro de table representa as bordas-->
+    <table border="1">
+        <caption>Tabela de informações</caption>
+        <thead>
+        <tr><!--Inicio da linha 1-->
+            <th>L1C1</th>
+            <th>L1C2</th>
+            <th>L1C3</th>
+            <th>L1C4</th>
+        </tr><!--fim da linha 1-->
+    </thead>
+    <tbody>
+        <tr><!--Inicio da linha 2-->
+            <td>L2C1</td>
+            <td>L2C2</td>
+            <td>L2C3</td>
+            <td>L2C4</td>
+        </tr><!--fim da linha 2-->
+    </tbody>
+    <tfoot>
+        <tr><!--Inicio da linha 3-->
+            <td>L3C1</td>
+            <td>L3C2</td>
+            <td>L3C3</td>
+            <td>L3C4</td>
+        </tr><!--fim da linha 3-->
+    </tfoot>
+    </table>
+    <hr><!--tarefa 01 em aula, tabela com o clima-->
+    <table border="1"> <!-- há também o comando tr*5>td*6 onde cria-se automaticamente as linhas e colunas na quantidade que quiser, TEM QUE SER FEITO DENTRO DE <TABLE>-->
+    <tr>
+    <thead>
+        <th>Dia</th>
+        <th>Tempo</th>
+        <th>Mínima</th>
+        <th>Máxima</th>
+    </thead>
+    </tr>
+    <tr>
+    <tbody>
+        <td align="center">Domingo</td>
+        <td><img src="../imagens 2/parcialmente_nublado.png" alt="" width="50" align="center"></td>
+        <td align="center">27º</td>
+        <td align="center">32º</td>
+    </tr>
+    <tr>
+        <td align="center">Segunda</td>
+        <td><img src="../imagens 2/ensolarado.png" alt="" width="50" align="center"></td>
+        <td align="center">27º</td>
+        <td align="center">32º</td>
+    </tr>
+    <tr>
+        <td align="center">Terça</td>
+        <td><img src="../imagens 2/sol_chuva.png" alt="" width="50" align="center"></td>
+        <td align="center">27º</td>
+        <td align="center">32º</td>
+    </tr>
+    <tr>
+        <td align="center">Quarta</td>
+        <td><img src="../imagens 2/trovoada.png" alt="" width="50" align="center"></td>
+        <td align="center">27º</td>
+        <td align="center">32º</td>
+    </tr>
+    <tr>
+        <td align="center">Quinta</td>
+        <td><img src="../imagens 2/ventania.png" alt="" width="50" align="center"></td>
+        <td align="center">27º</td>
+        <td align="center">32º</td>
+    </tr>
+    <tr>
+        <td align="center">Sexta</td>
+        <td><img src="../imagens 2/nublado.png" alt="" width="50" align="center"></td>
+        <td align="center">27º</td>
+        <td align="center">32º</td>
+    </tbody>
+    </tr>
+    <tr>
+        <td align="center">Sábado</td>
+        <td><img src="../imagens 2/parcialmente_nublado.png" alt="" width="50" align="center"></td>
+        <td align="center">27º</td>
+        <td align="center">32º</td>
+    </tr>
+    </table>
+    <hr><!--Tarefa 02 em aula--><!-- Comandos colspan e rowspan é pra mesclar colunas e linhas respectivamentes, entre aspas a qtd que vai mesclar-->
+        <!--Outros comandos aligh="center" dentro do <tr> em vez de em cada <td> e width="número+%" e cellspacing="" e cellpadding=""-->
+        <!-- Transformar as células cabeçalhos td em th (para cabeçalho "negrito")-->
+        <!-- Lembrar dos comandos thead, tbody e tfoot se necessário-->
+<table border="2" width="30%" cellspacing="0">
+    <thead>
+        <tr align="center">
+        <thead>
+            <th width="70" rowspan="3">país</th>
+            <th colspan="2">saneamento básico (%)</th>
+            <th colspan="3">taxa de mortalidade<br>infantil (por mil)</th>
+        </tr>
+        <tr align="center">
+            <th rowspan="2">esgotamento<br>sanitário<br>adequado</th>
+            <th rowspan="2">abastecimento<br> de água</th>
+            <th colspan="3">anos de permanência<br>das mães na escola</th>
+        </tr>
+        <tr align="center">
+            <td><b>até 3</b></td>
+            <td><b>de<br>4 a 7</b></td>
+            <td><b>8 ou<br>mais</b></td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr align="center">
+            <td align="center">I</td>
+            <td>33</td>
+            <td>47</td>
+            <td>45,1</td>
+            <td>29,6</td>
+            <td>21,4</td>
+        </tr>
+        <tr align="center">
+            <td>II</td>
+            <td>36</td>
+            <td>65</td>
+            <td>70,3</td>
+            <td>41,2</td>
+            <td>28,0</td>
+        </tr>
+        <tr align="center">
+            <td>III</td>
+            <td>81</td>
+            <td>88</td>
+            <td>34,8</td>
+            <td>27,4</td>
+            <td>17,7</td>
+        </tr>
+        <tr align="center">
+            <td>IV</td>
+            <td>62</td>
+            <td>79</td>
+            <td>33,9</td>
+            <td>22,5</td>
+            <td>16,4</td>
+        </tr>
+        <tr  align="center">
+            <td>V</td>
+            <td>40</td>
+            <td>73</td>
+            <td>37,9</td>
+            <td>25,1</td>
+            <td>19,3</td>
+        </tr>
+    </tbody>
+</table>
+<!-- referência <img src="https://ead.bri.ifsp.edu.br/moodle/pluginfile.php/121730/mod_assign/intro/tabela%202.gif" alt="" width="580"></h1> -->
+<hr>
+
+
+</body>
+</html>

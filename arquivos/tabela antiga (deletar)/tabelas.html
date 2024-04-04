@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+</head>
+<body>
+    <h1>TABELAS</h1><!-- tr representa as linhas e td as colunas--> <!-- o comando border dentro de table representa as bordas-->
+    <table border="1">
+        <caption>Tabela de informações</caption>
+        <thead>
+        <tr><!--Inicio da linha 1-->
+            <th>L1C1</th>
+            <th>L1C2</th>
+            <th>L1C3</th>
+            <th>L1C4</th>
+        </tr><!--fim da linha 1-->
+    </thead>
+    <tbody>
+        <tr><!--Inicio da linha 2-->
+            <td>L2C1</td>
+            <td>L2C2</td>
+            <td>L2C3</td>
+            <td>L2C4</td>
+        </tr><!--fim da linha 2-->
+    </tbody>
+    <tfoot>
+        <tr><!--Inicio da linha 3-->
+            <td>L3C1</td>
+            <td>L3C2</td>
+            <td>L3C3</td>
+            <td>L3C4</td>
+        </tr><!--fim da linha 3-->
+    </tfoot>
+    </table>
+    <hr><!--tarefa 01 em aula, tabela com o clima-->
+    <table border="1"> <!-- há também o comando tr*5>td*6 onde cria-se automaticamente as linhas e colunas na quantidade que quiser, TEM QUE SER FEITO DENTRO DE <TABLE>-->
+    <tr>
+    <thead>
+        <th>Dia</th>
+        <th>Tempo</th>
+        <th>Mínima</th>
+        <th>Máxima</th>
+    </thead>
+    </tr>
+    <tr>
+    <tbody>
+        <td align="center">Domingo</td>
+        <td><img src="../imagens 2/parcialmente_nublado.png" alt="" width="50" align="center"></td>
+        <td align="center">27º</td>
+        <td align="center">32º</td>
+    </tr>
+    <tr>
+        <td align="center">Segunda</td>
+        <td><img src="../imagens 2/ensolarado.png" alt="" width="50" align="center"></td>
+        <td align="center">27º</td>
+        <td align="center">32º</td>
+    </tr>
+    <tr>
+        <td align="center">Terça</td>
+        <td><img src="../imagens 2/sol_chuva.png" alt="" width="50" align="center"></td>
+        <td align="center">27º</td>
+        <td align="center">32º</td>
+    </tr>
+    <tr>
+        <td align="center">Quarta</td>
+        <td><img src="../imagens 2/trovoada.png" alt="" width="50" align="center"></td>
+        <td align="center">27º</td>
+        <td align="center">32º</td>
+    </tr>
+    <tr>
+        <td align="center">Quinta</td>
+        <td><img src="../imagens 2/ventania.png" alt="" width="50" align="center"></td>
+        <td align="center">27º</td>
+        <td align="center">32º</td>
+    </tr>
+    <tr>
+        <td align="center">Sexta</td>
+        <td><img src="../imagens 2/nublado.png" alt="" width="50" align="center"></td>
+        <td align="center">27º</td>
+        <td align="center">32º</td>
+    </tbody>
+    </tr>
+    <tr>
+        <td align="center">Sábado</td>
+        <td><img src="../imagens 2/parcialmente_nublado.png" alt="" width="50" align="center"></td>
+        <td align="center">27º</td>
+        <td align="center">32º</td>
+    </tr>
+    </table>
+    <hr><!--Tarefa 02 em aula--><!-- comandos colspan e rowspan é pra mesclar colunas e linhas repectivamentes, entre aspas escolhe o numero-->
+    <table border="1">
+        <tr>
+            <td colspan="4">país</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="2"> 1 </td>
+            
+            <td colspan="2"> 1</td>
+            
+        </tr>
+    </table>
+    <hr><!--campo de testes-->
+    <table border="1">
+        <tr>
+            <th rowspan="4">país</th>
+            <th>saneamento básico (%)</th>
+            <th>taxa de mortalidade infantil</th>
+            <th></th>
+            <th></th>
+            <th></th>
+        </tr>
+        <tr>
+            <td>esgotamento<br>sanitário<br>adequado</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+</body>
+</html>
