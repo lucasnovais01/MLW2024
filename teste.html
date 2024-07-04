@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Início do CSS</title>
+    <!--As tag a tag &lt;&gt; permitem fazer uma tag como texto em vez de programa-->
+    <!--Segunda forma de introduzir CSS, dentro do head da página html (incorporado), exemplo: seletor { propriedade: valor; }-->
+    <style type="text/css">
+
+      body {
+    background-color: rgb(131, 131, 131);
+}
+h1 {
+    color: rgb(204, 109, 109);
+    padding: 10px;
+}
+    </style>
+    <!--Terceira forma de introduzir CSS, criar arquivos com extensão CSS(externo)-->
+    <link rel="stylesheet" type="text/css" href="css/estilo.css">
+    <link rel="stylesheet" type="text/css" href="css/estilo2.css">
+
+    <style>
+        div span {
+            color: red;
+        }
+    </style>
+    <style>
+        #corazul {
+            color: blue;
+        }
+        .fundovermelho {background-color: red;}
+        .font{font-size: 30px;}
+        body{font-size: 50px;}
+    </style>
+</head>
+<body>
+    <h1>Título</h1>
+
+    <!--A primeira forma de aplicar CSS a uma página é utilizando o atributo style em elementos do HTML (inline)-->
+    <p style="color: blue">Parágrafo com fonte azul.</p>
+    <p>Esse outro parágrafo não é azul, a não ser que
+    exista <span style="color: red">CSS em outro lugar</span>.</p>
+<br><hr>
+    <p>Existem três tipos de folha de estilo CSS possíveis para utilização em projetos WEB: <b><span style="color: blue"> inline</span>, <span style="color: red">incorporado</span> e <span style="color: darkorange;">externo.</span></b></p>
+<hr>
+<h1 style="color:rgb(197, 9, 9);padding:0px;">Teste de CSS Inline</h1>
+<p style="color:rgb(1, 121, 27);">Teste 2 de CSS Inline.</p>
+        <h1>Título</h1>
+        <h2>Trítulo</h2>
+        <h3>Quatrítulo</h3>
+
+        <div>
+        <p>Lucas <span> Novais de Oliveira</span></p>
+        <p id="corazul">Lucas Novais de Oliveira</p>
+        </div>
+        <p class="fundovermelho">Lucas Novais de Oliveira</p>
+        <p id="corazul" class="fundovermelho font">Lucas Novais de Oliveira</p>
+
+
+</body>
+</html>
